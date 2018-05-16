@@ -22,7 +22,7 @@ public class TopLevelActivity extends Activity {
                                         long id) {
                     if (position == 0) {
                         Intent intent = new Intent(TopLevelActivity.this,
-                                DringCategoryActivities.class);
+                                DrinkCategoryActivity.class);
                         startActivity(intent);
 
                     }
