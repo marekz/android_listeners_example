@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_weight="190dp"
+        android:layout_width="190dp"
         android:layout_height="190dp" />
 
     <TextView

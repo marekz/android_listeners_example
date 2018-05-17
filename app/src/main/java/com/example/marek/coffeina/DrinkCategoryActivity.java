@@ -12,12 +12,12 @@ public class DrinkCategoryActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ListView listDrink = getListView();
         ArrayAdapter<Drink> listAdapter = new ArrayAdapter<Drink>(
                 this,
                 android.R.layout.simple_list_item_1,
                 Drink.drinks
         );
-        ListView listDrink = getListView();
         listDrink.setAdapter(listAdapter);
     }
 
@@ -28,5 +28,6 @@ public class DrinkCategoryActivity extends ListActivity {
                                 long id) {
         Intent intent = new Intent(DrinkCategoryActivity.this, DrinkActivity.class);
         intent.putExtra(DrinkActivity.EXTRA_DRINKNO, (int) id);
+        startActivity(intent);
     }
 }
